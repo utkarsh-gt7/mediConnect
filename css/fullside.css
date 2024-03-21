@@ -1,0 +1,1008 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --organge: #40a2e3;
+    --black :#130f40;
+    --light-color:#023429;
+    --background:#BBE2EC;
+    --fadeLite:#FFF6E9;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(29, 96, 183, 0.1);
+    --outline-hover:.4rem solid #40a2e3;
+
+}
+
+
+*{
+   padding: 0%;
+   margin: 0%;
+   box-sizing: border-box;
+   font-family: "Nunito", sans-serif;
+   text-decoration: none;
+   outline: none;
+   border: none;
+   text-transform: capitalize;
+   transition: all 2ms linear;
+}
+/* .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.901);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .preloader-image {
+    max-width: 32%;
+    max-height: 32%;
+    transition: transform 1s ease;
+    transform: scale(1);
+  } */
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background: #eee;
+    /* visibility: hidden; */
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+.heading span{
+    background: var(--organge);
+    color: #fff;
+    display: inline;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%,  100% 99%,  0% 100%, 7% 50%, 0% 0% );
+}
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .logo i{
+    color: var(--organge);
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover{
+    color: var(--organge);
+}
+
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-left: 0.3rem;
+    text-align: center;
+}
+
+.header .icons div:hover{
+    background: var(--organge);
+    color: #fff;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.header .search-from{
+    position: absolute;
+    top: 110%;
+    right: 110%;
+    /* right: 2rem; */
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+
+}
+
+.header .search-from.active {
+    right: 2rem; /* Move the form into view when active */
+    transition:  0.4s linear; /* Add transition property */
+}
+
+.header .search-from input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding:0 1.5rem;
+}
+.header .search-from label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.header .search-from label:hover{
+    color: var(--organge);
+
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    transition: all 2ms linear;
+}
+
+.btn:hover{
+    background-color: var(--organge);
+    color: #fff;
+}
+
+.header .login-form{
+    position: absolute;
+    top: 110%; right: 110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+
+}
+.header .login-form.active{
+    right: 2rem; /* Move the form into view when active */
+    transition:  0.4s linear; /* Add transition property */
+}
+
+.header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+
+}
+.header .login-form .box{
+    width: 100%;
+    margin: 0.7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.header .login-form p{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+    color: var(--light-color);
+}
+
+.header .login-form p a{
+    color: var(--organge);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:991px) {
+    
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+
+@media screen and (max-width:767px){
+    #menu-btn{
+        display:inline-block;
+    }
+    .header .search-from{
+        width: 90%;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 110%;
+        right: 110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+
+    }
+
+    .header .navbar.active{
+        right: 2rem; /* Move the form into view when active */
+        transition:  0.4s linear; /* Add transition property */
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display:block;
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+    
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+}
+
+.feature2{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(healthcare-services-annual-health-checkup-heart-rate-pulse-measurement-pills-antibiotics-dna-diseases-genes-illustration-on-light-blue-hexagonal-background-health-and-medicine-concept-vector.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.feature2 .feacture_conatnt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15rem;
+}
+
+.left_part{
+    width: 600px;
+}
+.left_part h2{
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--black);
+    filter: drop-shadow(8px 8px 10px rgb(178, 49, 49));
+    /* background: orange; */
+    /* width: 450px;
+    clip-path: polygon(100% 0, 93% 50%,  100% 99%,  0% 100%, 7% 50%, 0% 0% ); */
+}
+.left_part h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.right_part img{
+    height: 505px;
+}
+.role{
+    color: rgb(27, 95, 255);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    background: rgb(184, 177, 165);
+    background: url(photo-1495195129352-aeb325a55b65.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .contend {
+    text-align: center;
+    width: 60rem;
+}   
+.home .contend h3{
+    color: var(--black);
+    font-size: 3rem;
+}   
+
+.home .contend h3 span{
+    color: var(--organge);
+}   
+
+.home .contend P{
+    color: var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}   
+
+
+.feature .box-container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.feature .box-container .box{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all .2s linear;
+}
+.feature .box-container .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+
+}
+
+.feature .box-container .box img{
+    margin: 1rem 0;
+    height: 18rem;
+}
+.feature .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+.feature .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-colo);
+    padding:1rem 0;
+}
+
+
+.product .product-silder{
+    padding: 1rem;
+}
+
+.product .product-silder:first-child{
+    margin-bottom: 2rem;
+}
+
+.product .product-silder .box{
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: 0.2s linear;
+
+}
+
+.product .product-silder .box:hover{
+    outline-offset: 0rem;
+    outline: var(--outline-hover);
+}
+
+.product .product-silder .box img{
+    height: 20rem;
+}
+
+.product .product-silder .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.product .product-silder .box .price{
+    font-size: 2rem;
+    color: var(--light-color);
+    padding: .5rem 0;
+    
+}
+
+.product .product-silder .box .stars i{
+    font-size: 1.7rem;
+    color:gold;
+    padding: .5rem 0;
+
+}
+
+
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border: 2px solid #ffffff59;
+    width: 500px;
+    /* important scale */
+    scale: 0;  
+    background: #00000088;
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1;
+    padding: 20px 25px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .modal-header {
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ffffff88;
+  }
+
+  .modal-header div i {
+    font-size: 30px;
+  }
+
+  .close {
+    cursor: pointer;
+  }
+
+  .icon-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .icon {
+    border: 1px solid #ffffff88;
+    padding: 17px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    gap: 10px;
+    justify-content: center;
+    transition: all 0.5s;
+    margin-bottom: 25px;
+    text-decoration: none;
+  }
+
+  .icon i {
+    font-size: 27px;
+  }
+
+  #facebook {
+    color: #1771e6;
+    border: 1px solid #1771e6;
+  }
+
+  #facebook:hover {
+    background-color: #1771e6;
+    color: #fff;
+  }
+
+  #twitter {
+    color: #1c99e6;
+    border: 1px solid #1c99e6;
+  }
+
+  #twitter:hover {
+    background-color: #1c99e6;
+    color: #fff;
+  }
+
+  #instagram {
+    color: #cb2770;
+    border: 1px solid #cb2770;
+  }
+  #instagram:hover {
+    background-color: #cb2770;
+    color: #fff;
+  }
+
+  #whatsapp {
+    color: #2fe664;
+    border: 1px solid #2fe664;
+  }
+  #whatsapp:hover {
+    background-color: #2fe664;
+    color: #fff;
+  }
+  
+  #telegram {
+    color: #0081c2;
+    border: 1px solid #0081c2;
+  }
+  #telegram:hover {
+    background-color: #0081c2;
+    color: #fff;
+  }
+  
+  .active {
+    scale: 1;
+  }
+
+  .overlay {
+    position: fixed;
+    background-color: #5f5f5f83;
+    top: 0;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+  }
+
+  .overlayactive {
+    opacity: 1;
+    pointer-events: initial;
+  }
+
+  @media (max-width: 850px) {
+    .card-wrapper {
+      max-width: 250px;
+      width: 300px;
+    }
+    .bottom-group {
+      flex-direction: column;
+    }
+    .modal {
+      width: 70vw;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-wrapper {
+      position: static;
+      top: 0;
+      left: 0;
+      translate: 0 0;
+      margin: 0 12px;
+      padding: 0 10px;
+    }
+    .card-wrapper div img {
+      width: 120px;
+      height: 120px;
+    }
+    .user-name h2 {
+      font-size: 1.3rem;
+    }
+    .modal {
+      width: 80vw;
+    }
+  }
+
+
+  .follow{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #00000088;
+    backdrop-filter: blur(10px);
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+    translate: -50% -50%;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    scale: 0;
+    transition:  0.5s ease-in-out;
+
+  }
+
+  .follow-heading{
+
+    display: flex;
+    margin-bottom: 35px;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 12px;
+    gap: 25px;
+    border-bottom: 1px solid #ffffff88;
+    color: #ffffff;
+  }
+
+  .follow div i{
+    font-size: 25px;
+  }
+
+  .image{
+    position: absolute;
+    top: 50px;
+  }
+ 
+  .addScale{
+    scale: 1;
+  }
+ 
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/* Just the background stuff */
+span.s1 {
+    position: absolute;
+    top: 0;
+    font-size: 15rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #3C4447;
+}
+
+/* span.s2 {
+    font-weight: 800;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 15rem;
+    text-transform: uppercase;
+    color: #3C4447;
+} */
+
+/* My hum... body.. yeah.. */
+body {
+    background-color: #91aaba;
+}
+
+/* The card */
+.card {
+    position: relative;
+    height: 450px;
+    width: 900px;
+    margin: 120px auto;
+    background-color: #FFF;
+    box-shadow: 10px 10px 93px 0px rgba(0,0,0,0.75);
+}
+
+/* Image on the left side */
+.thumbnail {
+    float: left;
+    position: relative;
+    left: 30px;
+    top: -30px;
+    height: 320px;
+    width: 530px;
+    box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
+    overflow: hidden;
+}
+
+img.left {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: auto;
+    width: 100%;
+    transform: translate(-50%,-50%);
+}
+
+/* Right side of the card */
+.right {
+    margin-left: 590px;
+    margin-right: 20px;
+}
+
+.right h1 {
+    padding-top: 15px;
+    font-size: 1.3rem;
+    color: #4B4B4B;
+}
+
+/* .author {
+    background-color: #9ECAFF;
+    height: 50px;
+    width: 110px;
+    border-radius: 20px;
+} */
+
+.author > img {
+    padding-top: 5px;
+    margin-left: 10px;
+    float: left;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+/* h2 {
+    padding-top: 8px;
+    margin-right: 6px;
+    text-align: right;
+    font-size: 0.8rem;
+    color: white;
+} */
+
+.separator {
+    margin-top: 10px;
+    border: 1px solid #C3C3C3;
+}
+
+.right p {
+    text-align: justify;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    line-height: 150%;
+    color: #4B4B4B;
+}
+
+/* DATE of release */
+.right h5 {
+    position: absolute;
+    left: 30px;
+    bottom: -120px;
+    font-size: 6rem;
+    color: #C3C3C3;
+}
+
+.right h6 {
+    position: absolute;
+    left: 30px;
+    bottom: -55px;
+    font-size: 2rem;
+    color: #C3C3C3;
+}
+
+/* Those future buttons */
+/* ul {
+    margin-left: 250px;
+}
+
+li {
+    display: inline;
+    list-style: none;
+    padding-right: 40px;
+    color: #7B7B7B;
+} */
+
+/* Floating action button */
+/* .fab {
+    position: absolute;
+    right: 50px;
+    bottom: -40px;
+    box-sizing: border-box;
+    padding-top: 18px;
+    background-color: #1875D0;
+    width: 80px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.75);
+} */
+
+
+    /* CSS */
+    .button-53 {
+      background-color: #3DD1E7;
+      border: 0 solid #E5E7EB;
+      box-sizing: border-box;
+      color: #000000;
+      display: flex;
+      font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+      font-size: 1rem;
+      font-weight: 700;
+      justify-content: center;
+      line-height: 1.75rem;
+      padding: .75rem 1.65rem;
+      margin-top: 10px;
+      position: relative;
+      text-align: center;
+      text-decoration: none #000000 solid;
+      text-decoration-thickness: auto;
+      width: 100%;
+      max-width: 190px;
+      position: relative;
+      cursor: pointer;
+      transform: rotate(-2deg);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-53:focus {
+      outline: 0;
+    }
+    
+    .button-53:after {
+      content: '';
+      position: absolute;
+      border: 1px solid #000000;
+      bottom: 4px;
+      left: 4px;
+      width: calc(100% - 1px);
+      height: calc(100% - 1px);
+    }
+    
+    .button-53:hover:after {
+      bottom: 2px;
+      left: 2px;
+    }
+    
+    @media (min-width: 768px) {
+      .button-53 {
+        padding: .75rem 3rem;
+        font-size: 1.25rem;
+      }
+    }  
